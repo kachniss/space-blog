@@ -12,9 +12,39 @@ a {
 }
 
 .content {
-    width: 1000px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar, main, footer {
+    padding: 40px;
+}
+
+.sidebar {
+    flex-basis: 25%;
+}
+
+main {
+    flex-basis: 60%;
+}
+
+footer {
+    flex-basis: 100%;
+    padding-bottom: 10px;
+    align-self: flex-end;
+    font-size: 1.2rem;
 }
 
 .category {
     font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+hr:last-child {
+    display: none;
 }
