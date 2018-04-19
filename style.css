@@ -18,7 +18,7 @@ a {
     flex-wrap: wrap;
 }
 
-.sidebar, main, footer {
+.sidebar, main {
     padding: 40px;
 }
 
@@ -28,11 +28,12 @@ a {
 
 main {
     flex-basis: 60%;
+    padding-bottom: 10px;
 }
 
 footer {
     flex-basis: 100%;
-    padding-bottom: 10px;
+    padding: 10px 40px;
     align-self: flex-end;
     font-size: 1.2rem;
 }

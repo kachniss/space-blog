@@ -12,10 +12,12 @@
         </div>
         <main>
             <?php
-            // require_once('lib/functions.php');
+                require_once('lib/functions.php');
 
                 $json = file_get_contents('data/posts.json');
                 $articles = json_decode( $json, true );
+
+                usort($articles, 'sort_array');
 
                 foreach ($articles as $article) {
                     $title = $article['title'];
